@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles/css/estilo-general.css" />
+
+  <title>VALIDACIÓN</title>
+</head>
+
+<body>
+  <div id="form" class="container contenedor">
+    <div class="toggle">
+      <span> Register/Session</span>
+    </div>
+
+    <div class="formulario">
+      <h2>Crea tu Cuenta</h2>
+      <form class="formTop" id="form1" name="form1Name" action="#">
+        <div class="top" id="inputEmailReg">
+          <span class="verificar mErrorInactivo">*Escribe un correo válido</span>
+          <input name="emailReg" id="emailReg" class="emailReg" type="email" placeholder="Correo Electrónico"
+            autocomplete="off" autofocus />
+        </div>
+
+        <div class="top" id="inputpasswordReg">
+          <span class="verificar mErrorInactivo">*Contraseña incorrecta: mín 1 mayúsc, 1 núm y 8 caracteres</span>
+          <input name="passwordReg" id="passwordReg" type="password" placeholder="Contraseña" />
+        </div>
+
+        <div class="top" id="inputpassword2Reg">
+          <span class="verificar mErrorInactivo">*Las contraseñas deben coincidir</span>
+          <input name="password2Reg" id="password2Reg" type="password" placeholder="Repetir Contraseña" />
+        </div>
+
+        <div class="top" id="selectProvincia">
+          <span class="verificar mErrorInactivo">*Debes seleccionar una provincia</span>
+          <select name="provincia" id="provincia">
+            <option value="" disabled selected>Selecciona una ciudad</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Madrid">Madrid</option>
+            <option value="A Coruña">A Coruña</option>
+            <option value="Valencia">Valencia</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Bilbao">Bilbao</option>
+          </select>
+        </div>
+
+        <button type="submit" id="submit1" class="btn btn-block">
+          Enviar
+        </button>
+      </form>
+    </div>
+
+    <div class="formulario">
+      <h2>Iniciar Sesión</h2>
+      <form id="form2" name="form2Name action="#">
+        <div class="top" id="inputEmailIni">
+          <span class="verificar mErrorInactivo">*Escribe un correo válido</span>
+          <input name="emailIni" id="emailIni" class="emailIni" type="email" placeholder="Correo Electrónico"
+            autocomplete="off" autofocus/>
+        </div>
+
+        <div class="top" id="inputpasswordIni">
+          <span class="verificar mErrorInactivo">*Contraseña incorrecta: mín 1 mayúsc, 1 núm y 8 caracteres</span>
+          <input name="passwordIni" id="passwordIni" type="password" placeholder="Contraseña" />
+        </div>
+        <button type="submit" id="submit2" class="btn btn-primary btn-block">
+          Entrar
+        </button>
+        <div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div id="modal1"></div>
+  <div id="modal2"></div>
+
+
+ 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/e181695368.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
